@@ -15,6 +15,8 @@ const BubblePage = () => {
       .then(res => setColorList(res.data));
   }, []);
 
+  useEffect(() => {}, [colorList]);
+
   return (
     <>
       <ColorList colors={colorList} updateColors={setColorList} />
